@@ -62,6 +62,28 @@ final class BitAppUITests: XCTestCase {
         XCTAssertFalse(app.textFields["daily-answer-field"].exists, "an already-answered daily puzzle shouldn't be re-askable the same day")
     }
 
+    /// Swiping the Daily Challenge card left collapses it into a small
+    /// bubble (chat-heads style) rather than dismissing it outright —
+    /// still one tap away, just out of the way for the rest of the
+    /// session.
+    func testDailyChallengeCardCollapsesIntoABubbleOnSwipe() throws {
+        let app = launchFreshApp()
+        app.tabBars.buttons["Play"].tap()
+
+        let card = app.buttons["daily-challenge-card"]
+        XCTAssertTrue(card.waitForExistence(timeout: 5))
+        XCTAssertFalse(app.buttons["daily-challenge-bubble"].exists)
+
+        card.swipeLeft()
+
+        let bubble = app.buttons["daily-challenge-bubble"]
+        XCTAssertTrue(bubble.waitForExistence(timeout: 3), "swiping left should collapse the card into a bubble")
+        XCTAssertFalse(card.exists, "the full card should be gone once collapsed")
+
+        bubble.tap()
+        XCTAssertTrue(app.navigationBars["Puzzle of the Day"].waitForExistence(timeout: 3), "the bubble should still open the same daily puzzle sheet")
+    }
+
     /// Play is now pure puzzle mode: empty until something's discovered,
     /// then an endless stream of challenges drawn only from the discovered
     /// pool, with a plain running-total number on top (no picker, no

@@ -3,16 +3,52 @@ import SwiftUI
 /// The compact entry point embedded at the top of Play — shows today's
 /// day number and whether it's already been solved, without requiring a
 /// tap to find out. Tapping opens `DailyChallengeView` as a sheet.
+///
+/// Swipeable, not just tappable: dragging it left collapses it into a
+/// small bubble pinned to the left edge (a chat-heads-style minimize,
+/// not a dismiss) — the puzzle is still one tap away, it just stops
+/// taking up banner space for the rest of this Play session. Purely
+/// local UI state, not persisted: a fresh launch always shows the full
+/// card again, so the daily-habit hook stays at full visibility on the
+/// day it matters most (a new session), while still letting it get out
+/// of the way once the player's already seen it today.
 struct DailyChallengeCard: View {
     let dayNumber: UInt32
     let alreadyAttempted: Bool
     let wasCorrect: Bool
     let action: () -> Void
 
+    @State private var collapsed = false
+    @State private var dragOffset: CGFloat = 0
+
+    /// How far left a drag has to travel before release commits to
+    /// collapsing, rather than springing back — big enough that a
+    /// glancing swipe (or a tap that wobbles slightly) doesn't
+    /// accidentally collapse it.
+    private let collapseThreshold: CGFloat = -70
+
+    private var icon: String {
+        alreadyAttempted ? (wasCorrect ? "checkmark.seal.fill" : "seal") : "calendar.badge.clock"
+    }
+
     var body: some View {
+        HStack {
+            if collapsed {
+                bubble.transition(.scale.combined(with: .opacity))
+            } else {
+                card
+                    .offset(x: dragOffset)
+                    .transition(.scale.combined(with: .opacity))
+                Spacer(minLength: 0)
+            }
+        }
+        .animation(.spring(response: 0.35, dampingFraction: 0.75), value: collapsed)
+    }
+
+    private var card: some View {
         Button(action: action) {
             HStack(spacing: 12) {
-                Image(systemName: alreadyAttempted ? (wasCorrect ? "checkmark.seal.fill" : "seal") : "calendar.badge.clock")
+                Image(systemName: icon)
                     .font(.title3)
                     .foregroundStyle(Theme.brand)
 
@@ -34,6 +70,36 @@ struct DailyChallengeCard: View {
         }
         .buttonStyle(.plain)
         .accessibilityIdentifier("daily-challenge-card")
+        // `minimumDistance` keeps a plain tap from ever being mistaken
+        // for a drag — the gesture doesn't even start recognizing until
+        // the touch has moved, so `action` above still fires normally.
+        .simultaneousGesture(
+            DragGesture(minimumDistance: 20)
+                .onChanged { value in
+                    dragOffset = min(0, value.translation.width)
+                }
+                .onEnded { value in
+                    if value.translation.width < collapseThreshold {
+                        Haptics.toggle()
+                        collapsed = true
+                    }
+                    dragOffset = 0
+                }
+        )
+    }
+
+    private var bubble: some View {
+        Button(action: action) {
+            ZStack {
+                Circle().fill(Theme.brand).frame(width: 46, height: 46)
+                Image(systemName: icon)
+                    .font(.system(size: 17, weight: .semibold))
+                    .foregroundStyle(.white)
+            }
+        }
+        .buttonStyle(.plain)
+        .accessibilityIdentifier("daily-challenge-bubble")
+        .accessibilityLabel("Puzzle of the Day")
     }
 }
 

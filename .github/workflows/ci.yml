@@ -1,0 +1,58 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  rust:
+    name: Rust (test, clippy, content-lint)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy
+
+      - uses: Swatinem/rust-cache@v2
+
+      - name: cargo test --workspace
+        run: cargo test --workspace
+
+      - name: cargo clippy --workspace --all-targets
+        run: cargo clippy --workspace --all-targets -- -D warnings
+
+      - name: content-lint
+        run: cargo run -p content-lint --quiet -- content
+
+  ios-build:
+    name: iOS build (simulator)
+    runs-on: macos-15
+    needs: rust
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      # BitFFI.xcframework only ships arm64 (device + simulator) — see
+      # build-ios-app.sh's own comment on why. macos-15 runners are
+      # Apple Silicon, so this matches.
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-apple-ios,aarch64-apple-ios-sim
+
+      - uses: Swatinem/rust-cache@v2
+
+      # Full pipeline: cross-compiles bit-ffi, regenerates Swift
+      # bindings, builds BitFFI.xcframework, then builds BitApp (and
+      # the embedded BitWidgetExtension) for the simulator. Build-only,
+      # deliberately not running the UI test suite here — macOS runner
+      # minutes cost significantly more than Linux ones, and the suite
+      # already runs locally before any change lands.
+      - name: Build BitApp
+        run: ./scripts/build-ios-app.sh

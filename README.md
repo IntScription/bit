@@ -1,5 +1,7 @@
 # BIT
 
+[![CI](https://github.com/IntScription/bit/actions/workflows/ci.yml/badge.svg)](https://github.com/IntScription/bit/actions/workflows/ci.yml)
+
 An offline-first, endless computer science learning game for iOS. A
 Rust engine drives everything — content, spaced-repetition-style
 review, challenge generation, progress — behind a native SwiftUI

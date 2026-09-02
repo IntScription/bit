@@ -63,6 +63,12 @@ struct BuildView: View {
                     }
                     .padding(12)
                     .background(RoundedRectangle(cornerRadius: 14).fill(.thinMaterial))
+                } header: {
+                    // Same fix as Profile's headerless-first-Section gap
+                    // (§23/§25): without a real header, a grouped-style
+                    // List still reserves its top inset, which read as
+                    // unexplained blank space under the nav bar.
+                    Text("Projects")
                 }
                 .listRowSeparator(.hidden)
                 .listRowBackground(Color.clear)
