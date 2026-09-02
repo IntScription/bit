@@ -3,6 +3,7 @@ name = "bit-ffi"
 edition.workspace = true
 version.workspace = true
 publish.workspace = true
+license.workspace = true
 
 [lib]
 name = "bit_ffi"
