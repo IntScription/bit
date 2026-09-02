@@ -1,0 +1,32 @@
+Concept(
+    id: "ascii",
+    title: "ASCII",
+    domain: "data_representation.text_encoding",
+    difficulty: Easy,
+    applicability: [Core, Practical, Historical],
+    prerequisites: ["bytes"],
+    related: ["bytes", "unicode"],
+    learning_objectives: [
+        "See a character as just a byte value with an agreed-upon meaning",
+        "Recognize that ASCII only needs 7 of a byte's 8 bits (128 characters)",
+    ],
+    explanation: "ascii.md",
+    interactive_demo: Some(InteractiveDemo(
+        id: "ascii_table",
+        params: {},
+    )),
+    practice_types: ["ascii_lookup"],
+    build_refs: ["ascii_message_builder"],
+    lab_capabilities: [],
+    real_world_uses: [
+        "Plain text files",
+        "The lowest 128 code points of Unicode, by design",
+        "Legacy protocols and file formats still built around it",
+    ],
+    historical_relevance: Some("One of the earliest character encoding standards, dating to the 1960s, and still the common baseline every later encoding builds on."),
+    mastery: MasteryRule(
+        min_practice_correct: 5,
+        min_accuracy: 0.75,
+        decay_days: Some(30),
+    ),
+)

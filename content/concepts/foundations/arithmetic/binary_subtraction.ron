@@ -1,0 +1,29 @@
+Concept(
+    id: "binary_subtraction",
+    title: "Binary Subtraction",
+    domain: "foundations.arithmetic",
+    difficulty: Practical,
+    applicability: [Core, Practical],
+    prerequisites: ["binary_addition", "twos_complement"],
+    related: ["binary_addition", "twos_complement", "binary"],
+    learning_objectives: [
+        "Subtract two binary numbers by hand, borrowing exactly like decimal subtraction does",
+        "Represent a negative subtraction result in 8-bit two's complement instead of stalling out",
+    ],
+    explanation: "binary_subtraction.md",
+    interactive_demo: None,
+    practice_types: ["binary_subtraction_eval"],
+    build_refs: [],
+    lab_capabilities: ["binary_playground"],
+    real_world_uses: [
+        "Why CPUs only need one adder circuit — subtraction reuses it by adding a negated (two's complement) operand",
+        "Computing the difference between two memory addresses or array indices",
+        "Any \"how far apart are these two values\" calculation",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 5,
+        min_accuracy: 0.75,
+        decay_days: Some(30),
+    ),
+)

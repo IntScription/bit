@@ -1,0 +1,28 @@
+Concept(
+    id: "unicode",
+    title: "Unicode",
+    domain: "data_representation.text_encoding",
+    difficulty: Core,
+    applicability: [Core, Practical],
+    prerequisites: ["ascii"],
+    related: ["ascii", "utf8"],
+    learning_objectives: [
+        "Understand Unicode as a universal table assigning every character a code point, independent of how it's stored in bytes",
+        "See why 128 (or even 256) characters isn't enough for the world's writing systems",
+    ],
+    explanation: "unicode.md",
+    interactive_demo: None,
+    practice_types: [],
+    build_refs: [],
+    lab_capabilities: [],
+    real_world_uses: [
+        "Emoji, and every non-English writing system",
+        "The character model virtually every modern text system is built on",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 2,
+        min_accuracy: 0.75,
+        decay_days: Some(45),
+    ),
+)

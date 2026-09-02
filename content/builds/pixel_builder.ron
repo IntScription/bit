@@ -1,0 +1,14 @@
+BuildDefinition(
+    id: "pixel_builder",
+    name: "Pixel Builder",
+    tier: Beginner,
+    description: "Recreate a target pattern on a 4x4 grid, one pixel at a time. Each pixel is exactly one bit — this is Binary, just arranged in two dimensions.",
+    concept_ids: ["bits", "binary"],
+    params: {
+        "width": "4",
+        "height": "4",
+        // Row-major, '1' = pixel on. A checkerboard: easy to verify by eye.
+        "pattern": "1010010110100101",
+    },
+    freeform: false,
+)

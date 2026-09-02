@@ -1,0 +1,7 @@
+Domain(
+    id: "data_representation.integers",
+    name: "Integers",
+    parent: Some("data_representation"),
+    order: 0,
+    description: "Unsigned counts versus signed values sharing the same bits, and how two's complement makes subtraction just addition.",
+)

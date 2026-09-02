@@ -1,0 +1,7 @@
+Domain(
+    id: "foundations",
+    name: "Foundations",
+    parent: None,
+    order: 0,
+    description: "The bedrock everything else builds on: bits, binary, logic, and how numbers actually work underneath.",
+)

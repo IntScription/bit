@@ -1,0 +1,30 @@
+Concept(
+    id: "stacks",
+    title: "Stacks",
+    domain: "data_structures.linear",
+    difficulty: Core,
+    applicability: [Core, Practical],
+    prerequisites: ["arrays"],
+    related: ["arrays", "queues"],
+    learning_objectives: [
+        "Predict what a sequence of push/pop operations leaves on top of a stack",
+        "Explain why a stack is called Last-In-First-Out (LIFO)",
+    ],
+    explanation: "stacks.md",
+    interactive_demo: None,
+    practice_types: ["stack_trace_eval"],
+    build_refs: [],
+    lab_capabilities: ["array_playground"],
+    real_world_uses: [
+        "The undo button in almost every app",
+        "Function call stacks during program execution",
+        "Browser back-button history",
+        "Balanced-parentheses / matching-bracket checking",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 5,
+        min_accuracy: 0.75,
+        decay_days: Some(30),
+    ),
+)

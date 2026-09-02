@@ -1,0 +1,32 @@
+Concept(
+    id: "or",
+    title: "OR",
+    domain: "foundations.logic",
+    difficulty: Easy,
+    applicability: [Core, Practical],
+    prerequisites: ["boolean_logic"],
+    related: ["boolean_logic", "and", "xor", "not"],
+    learning_objectives: [
+        "Predict OR's output for any combination of true/false inputs",
+        "Recognize OR as 'at least one condition must hold'",
+    ],
+    explanation: "or.md",
+    interactive_demo: Some(InteractiveDemo(
+        id: "logic_gate",
+        params: {"gate": "or"},
+    )),
+    practice_types: ["logic_gate_eval"],
+    build_refs: ["logic_gate_machine"],
+    lab_capabilities: ["logic_gate_playground"],
+    real_world_uses: [
+        "Permission checks where any one condition is enough",
+        "Bitmasking to set specific bits",
+        "Hardware OR gates in digital circuits",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 4,
+        min_accuracy: 0.85,
+        decay_days: Some(30),
+    ),
+)

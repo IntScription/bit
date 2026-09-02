@@ -1,0 +1,29 @@
+Concept(
+    id: "ip_addresses",
+    title: "IP Addresses",
+    domain: "networking",
+    difficulty: Practical,
+    applicability: [Core, Practical],
+    prerequisites: ["bytes"],
+    related: ["bytes", "binary", "bitwise_masks"],
+    learning_objectives: [
+        "Read an IPv4 address as four ordinary bytes, not a special new kind of number",
+        "Convert a single octet between its binary and decimal reading",
+    ],
+    explanation: "ip_addresses.md",
+    interactive_demo: None,
+    practice_types: ["binary_to_decimal"],
+    build_refs: [],
+    lab_capabilities: ["binary_playground"],
+    real_world_uses: [
+        "Every device on the internet is reachable through one of these",
+        "Subnet masks (AND-ing an address against a mask) decide which addresses are on the same local network",
+        "Reading a router's config page or a `ping`/`traceroute` output",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 4,
+        min_accuracy: 0.8,
+        decay_days: Some(30),
+    ),
+)

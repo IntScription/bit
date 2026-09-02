@@ -1,0 +1,32 @@
+Concept(
+    id: "xor",
+    title: "XOR",
+    domain: "foundations.logic",
+    difficulty: Core,
+    applicability: [Core, Practical],
+    prerequisites: ["boolean_logic", "or"],
+    related: ["or", "and", "not", "boolean_logic", "checksums", "twos_complement"],
+    learning_objectives: [
+        "Predict XOR's output for any combination of true/false inputs",
+        "Explain how XOR differs from OR (true for either input, but not both)",
+    ],
+    explanation: "xor.md",
+    interactive_demo: Some(InteractiveDemo(
+        id: "logic_gate",
+        params: {"gate": "xor"},
+    )),
+    practice_types: ["logic_gate_eval"],
+    build_refs: ["logic_gate_machine"],
+    lab_capabilities: ["logic_gate_playground"],
+    real_world_uses: [
+        "Toggling a bit on and off with the same operation",
+        "Simple stream ciphers (the XOR cipher)",
+        "Parity bits and basic error detection",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 5,
+        min_accuracy: 0.8,
+        decay_days: Some(30),
+    ),
+)

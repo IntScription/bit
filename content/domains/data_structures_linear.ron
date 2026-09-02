@@ -1,0 +1,7 @@
+Domain(
+    id: "data_structures.linear",
+    name: "Linear Structures",
+    parent: Some("data_structures"),
+    order: 0,
+    description: "Arrays, stacks, and queues — one underlying idea (an indexed sequence), three different rules for reading and writing it.",
+)

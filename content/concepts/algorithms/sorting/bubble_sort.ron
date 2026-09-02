@@ -1,0 +1,29 @@
+Concept(
+    id: "bubble_sort",
+    title: "Bubble Sort",
+    domain: "algorithms.sorting",
+    difficulty: Practical,
+    applicability: [Core, Practical],
+    prerequisites: ["arrays"],
+    related: ["arrays", "linear_search"],
+    learning_objectives: [
+        "Trace one full left-to-right pass of bubble sort over an array",
+        "Explain why the largest remaining value always reaches its final position by the end of a pass",
+    ],
+    explanation: "bubble_sort.md",
+    interactive_demo: None,
+    practice_types: ["bubble_sort_pass_eval"],
+    build_refs: [],
+    lab_capabilities: ["array_playground"],
+    real_world_uses: [
+        "The simplest sorting algorithm to hand-trace or teach",
+        "Detecting whether a list is already sorted (zero swaps in a pass)",
+        "A baseline every faster sorting algorithm is compared against",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 4,
+        min_accuracy: 0.75,
+        decay_days: Some(30),
+    ),
+)

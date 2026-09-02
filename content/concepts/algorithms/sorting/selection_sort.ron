@@ -1,0 +1,29 @@
+Concept(
+    id: "selection_sort",
+    title: "Selection Sort",
+    domain: "algorithms.sorting",
+    difficulty: Practical,
+    applicability: [Core, Practical],
+    prerequisites: ["bubble_sort"],
+    related: ["bubble_sort", "arrays"],
+    learning_objectives: [
+        "Trace one pass of selection sort: scan the whole array, find the minimum, swap it to the front",
+        "Explain why selection sort always does a full scan per pass, unlike bubble sort which can finish early",
+    ],
+    explanation: "selection_sort.md",
+    interactive_demo: None,
+    practice_types: ["selection_sort_pass_eval"],
+    build_refs: [],
+    lab_capabilities: ["array_playground"],
+    real_world_uses: [
+        "A close cousin of Bubble Sort with a different (and more predictable) cost profile",
+        "Repeatedly picking the next-best item from a remaining pool — the same shape as many selection/scheduling problems",
+        "A useful contrast for understanding why some sorts have a best case and others don't",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 4,
+        min_accuracy: 0.75,
+        decay_days: Some(30),
+    ),
+)

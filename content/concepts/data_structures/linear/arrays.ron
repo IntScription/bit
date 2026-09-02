@@ -1,0 +1,32 @@
+Concept(
+    id: "arrays",
+    title: "Arrays",
+    domain: "data_structures.linear",
+    difficulty: Easy,
+    applicability: [Core, Practical],
+    prerequisites: ["bytes"],
+    related: ["bytes", "stacks", "queues"],
+    learning_objectives: [
+        "Explain why reading array[i] is a direct address calculation, not a search",
+        "Read and write a value at a given index in a fixed-size array",
+    ],
+    explanation: "arrays.md",
+    interactive_demo: Some(InteractiveDemo(
+        id: "array_slots",
+        params: {"capacity": "6"},
+    )),
+    practice_types: ["array_index_lookup"],
+    build_refs: ["array_builder", "memory_simulator"],
+    lab_capabilities: ["array_playground"],
+    real_world_uses: [
+        "Storing a list of scores, pixels, or bytes contiguously in memory",
+        "The backing storage behind strings, images, and buffers",
+        "Lookup tables indexed directly by a code or id",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 4,
+        min_accuracy: 0.8,
+        decay_days: Some(30),
+    ),
+)

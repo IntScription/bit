@@ -1,0 +1,7 @@
+Domain(
+    id: "data_representation.integrity",
+    name: "Data Integrity",
+    parent: Some("data_representation"),
+    order: 20,
+    description: "Detecting a corrupted byte before it causes real damage — checksums and the simplest error-detection tricks.",
+)

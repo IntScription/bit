@@ -1,0 +1,7 @@
+Domain(
+    id: "algorithms.searching",
+    name: "Searching",
+    parent: Some("algorithms"),
+    order: 0,
+    description: "Finding a value in a collection — the difference between checking everything and being clever about where to look.",
+)

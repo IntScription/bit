@@ -1,0 +1,12 @@
+BuildDefinition(
+    id: "binary_counter",
+    name: "Binary Counter",
+    tier: Beginner,
+    description: "Flip switches to count up in binary. Reach the target value to win — there's always more than one way to get there.",
+    concept_ids: ["binary"],
+    params: {
+        "bit_width": "8",
+        "target_value": "10",
+    },
+    freeform: false,
+)

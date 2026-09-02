@@ -1,0 +1,31 @@
+Concept(
+    id: "utf8",
+    title: "UTF-8",
+    domain: "data_representation.text_encoding",
+    difficulty: Core,
+    applicability: [Core, Practical],
+    prerequisites: ["unicode", "bytes"],
+    related: ["unicode", "ascii", "bytes"],
+    learning_objectives: [
+        "Understand UTF-8 as a variable-length scheme: 1 to 4 bytes per code point",
+        "See why UTF-8 stores ASCII characters as a single, unchanged byte",
+    ],
+    explanation: "utf8.md",
+    interactive_demo: Some(InteractiveDemo(
+        id: "utf8_byte_breakdown",
+        params: {},
+    )),
+    practice_types: [],
+    build_refs: [],
+    lab_capabilities: [],
+    real_world_uses: [
+        "The dominant text encoding on the web and in most modern software",
+        "Backward compatibility with plain ASCII files",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 2,
+        min_accuracy: 0.75,
+        decay_days: Some(45),
+    ),
+)

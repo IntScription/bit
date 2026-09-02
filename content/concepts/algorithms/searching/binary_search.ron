@@ -1,0 +1,29 @@
+Concept(
+    id: "binary_search",
+    title: "Binary Search",
+    domain: "algorithms.searching",
+    difficulty: Practical,
+    applicability: [Core, Practical, Specialized],
+    prerequisites: ["linear_search"],
+    related: ["linear_search", "arrays"],
+    learning_objectives: [
+        "Trace binary search's repeated halving on a sorted array",
+        "Explain why binary search requires the array to already be sorted",
+    ],
+    explanation: "binary_search.md",
+    interactive_demo: None,
+    practice_types: ["binary_search_eval"],
+    build_refs: [],
+    lab_capabilities: ["array_playground"],
+    real_world_uses: [
+        "Looking up a word in a sorted dictionary or index",
+        "Database index lookups",
+        "Finding the first version where a bug was introduced (bisecting)",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 5,
+        min_accuracy: 0.75,
+        decay_days: Some(30),
+    ),
+)

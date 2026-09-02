@@ -1,0 +1,31 @@
+Concept(
+    id: "checksums",
+    title: "Checksums",
+    domain: "data_representation.integrity",
+    difficulty: Core,
+    applicability: [Practical],
+    prerequisites: ["xor", "bytes"],
+    related: ["xor", "bytes"],
+    learning_objectives: [
+        "Understand a checksum as a small value computed from data, used to detect accidental corruption",
+        "Compute a simple XOR checksum over a sequence of bytes by hand",
+    ],
+    explanation: "checksums.md",
+    interactive_demo: Some(InteractiveDemo(
+        id: "xor_checksum_demo",
+        params: {},
+    )),
+    practice_types: [],
+    build_refs: [],
+    lab_capabilities: [],
+    real_world_uses: [
+        "Detecting corrupted downloads or transmissions",
+        "Simple error detection in network protocols and file formats",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 3,
+        min_accuracy: 0.75,
+        decay_days: Some(45),
+    ),
+)

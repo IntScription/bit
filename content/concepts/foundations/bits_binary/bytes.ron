@@ -1,0 +1,32 @@
+Concept(
+    id: "bytes",
+    title: "Bytes",
+    domain: "foundations.bits_binary",
+    difficulty: Easy,
+    applicability: [Core, Practical],
+    prerequisites: ["binary"],
+    related: ["bits", "binary", "hexadecimal", "unsigned_integers", "ascii"],
+    learning_objectives: [
+        "Understand a byte as a group of 8 bits",
+        "Compute the range a byte can represent (0-255 unsigned)",
+    ],
+    explanation: "bytes.md",
+    interactive_demo: Some(InteractiveDemo(
+        id: "eight_switches",
+        params: {"bit_width": "8", "label_as_byte": "true"},
+    )),
+    practice_types: ["byte_to_decimal"],
+    build_refs: ["binary_counter"],
+    lab_capabilities: ["binary_playground", "byte_playground"],
+    real_world_uses: [
+        "Memory addressing granularity",
+        "File sizes (KB, MB, GB are all byte counts)",
+        "Character encoding (ASCII, one byte per character)",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 4,
+        min_accuracy: 0.8,
+        decay_days: Some(30),
+    ),
+)

@@ -1,0 +1,12 @@
+BuildDefinition(
+    id: "array_builder",
+    name: "Array Builder",
+    tier: Core,
+    description: "Fill every slot of a six-cell array to match the target sequence — the most direct way to feel why array[i] is a single address calculation, not a search.",
+    concept_ids: ["arrays"],
+    params: {
+        // Comma-separated bytes; capacity is implied by the list length.
+        "target": "12,45,7,88,3,61",
+    },
+    freeform: false,
+)

@@ -1,0 +1,7 @@
+Domain(
+    id: "foundations.numbers",
+    name: "Numbers",
+    parent: Some("foundations"),
+    order: 10,
+    description: "Reading the same value in decimal, binary, and hex — three notations for one number.",
+)

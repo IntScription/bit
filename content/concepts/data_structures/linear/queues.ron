@@ -1,0 +1,30 @@
+Concept(
+    id: "queues",
+    title: "Queues",
+    domain: "data_structures.linear",
+    difficulty: Core,
+    applicability: [Core, Practical],
+    prerequisites: ["arrays"],
+    related: ["arrays", "stacks"],
+    learning_objectives: [
+        "Predict what a sequence of enqueue/dequeue operations leaves at the front of a queue",
+        "Explain why a queue is called First-In-First-Out (FIFO)",
+    ],
+    explanation: "queues.md",
+    interactive_demo: None,
+    practice_types: ["queue_trace_eval"],
+    build_refs: [],
+    lab_capabilities: ["array_playground"],
+    real_world_uses: [
+        "Print job and task scheduling",
+        "Message queues in backend systems",
+        "Breadth-first search traversal order",
+        "Handling requests or customers in order of arrival",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 5,
+        min_accuracy: 0.75,
+        decay_days: Some(30),
+    ),
+)

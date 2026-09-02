@@ -1,0 +1,32 @@
+Concept(
+    id: "boolean_logic",
+    title: "Boolean Logic",
+    domain: "foundations.logic",
+    difficulty: Easy,
+    applicability: [Core],
+    prerequisites: ["bits"],
+    related: ["bits", "and", "or", "xor", "not"],
+    learning_objectives: [
+        "See true/false as another name for the same on/off idea as 1/0",
+        "Understand that boolean logic is what a CPU is actually computing with under the hood",
+    ],
+    explanation: "boolean_logic.md",
+    interactive_demo: Some(InteractiveDemo(
+        id: "truth_table",
+        params: {},
+    )),
+    practice_types: [],
+    build_refs: ["logic_gate_machine"],
+    lab_capabilities: ["logic_gate_playground"],
+    real_world_uses: [
+        "Conditional statements (if/else) in every programming language",
+        "Digital circuit design",
+        "Search query logic (AND/OR/NOT filters)",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 3,
+        min_accuracy: 0.8,
+        decay_days: Some(30),
+    ),
+)

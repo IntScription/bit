@@ -1,0 +1,7 @@
+Domain(
+    id: "foundations.bits_binary",
+    name: "Bits & Binary",
+    parent: Some("foundations"),
+    order: 0,
+    description: "The single on/off bit, and how strings of them become the numbers a computer actually stores.",
+)

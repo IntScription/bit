@@ -1,0 +1,28 @@
+Concept(
+    id: "signed_integers",
+    title: "Signed Integers",
+    domain: "data_representation.integers",
+    difficulty: Easy,
+    applicability: [Core],
+    prerequisites: ["unsigned_integers"],
+    related: ["unsigned_integers", "twos_complement"],
+    learning_objectives: [
+        "Understand why a fixed number of bits needs a scheme to represent negative numbers",
+        "See that some bits must be spent on the sign, shrinking the positive range",
+    ],
+    explanation: "signed_integers.md",
+    interactive_demo: None,
+    practice_types: [],
+    build_refs: [],
+    lab_capabilities: [],
+    real_world_uses: [
+        "Temperatures, balances, coordinates — anything that can go negative",
+        "Function return codes (negative often means error)",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 2,
+        min_accuracy: 0.8,
+        decay_days: Some(30),
+    ),
+)

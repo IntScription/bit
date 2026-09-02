@@ -1,0 +1,32 @@
+Concept(
+    id: "binary",
+    title: "Binary",
+    domain: "foundations.bits_binary",
+    difficulty: Easy,
+    applicability: [Core, Practical],
+    prerequisites: ["bits"],
+    related: ["bits", "decimal", "bytes", "hexadecimal", "bit_shifting"],
+    learning_objectives: [
+        "Convert between binary and decimal",
+        "Understand positional value of bits (128 64 32 16 8 4 2 1)",
+    ],
+    explanation: "binary.md",
+    interactive_demo: Some(InteractiveDemo(
+        id: "eight_switches",
+        params: {"bit_width": "8"},
+    )),
+    practice_types: ["binary_to_decimal"],
+    build_refs: ["binary_counter", "digital_lock"],
+    lab_capabilities: ["binary_playground"],
+    real_world_uses: [
+        "CPU data representation",
+        "Memory addressing",
+        "Digital electronics",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 5,
+        min_accuracy: 0.8,
+        decay_days: Some(30),
+    ),
+)

@@ -1,0 +1,7 @@
+Domain(
+    id: "foundations.arithmetic",
+    name: "Arithmetic",
+    parent: Some("foundations"),
+    order: 40,
+    description: "Doing math directly in binary — starting with addition, the operation every other one is eventually built from.",
+)

@@ -1,0 +1,7 @@
+Domain(
+    id: "foundations.logic",
+    name: "Logic",
+    parent: Some("foundations"),
+    order: 20,
+    description: "AND, OR, XOR, NOT — the four gates every digital circuit and every conditional statement is built from.",
+)

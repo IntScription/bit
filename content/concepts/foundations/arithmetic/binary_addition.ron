@@ -1,0 +1,29 @@
+Concept(
+    id: "binary_addition",
+    title: "Binary Addition",
+    domain: "foundations.arithmetic",
+    difficulty: Practical,
+    applicability: [Core, Practical],
+    prerequisites: ["binary"],
+    related: ["binary", "bit_shifting", "twos_complement"],
+    learning_objectives: [
+        "Add two binary numbers by hand, column by column, carrying exactly like decimal addition does",
+        "Explain why 1 + 1 = 10 in binary is the same carry rule as 9 + 1 = 10 in decimal",
+    ],
+    explanation: "binary_addition.md",
+    interactive_demo: None,
+    practice_types: ["binary_addition_eval"],
+    build_refs: [],
+    lab_capabilities: ["binary_playground"],
+    real_world_uses: [
+        "What a CPU's adder circuit actually does, in hardware, on every arithmetic instruction",
+        "Why binary subtraction is implemented as addition of a two's complement negative, not a separate circuit",
+        "The building block multiplication (repeated addition) and checksums are built from",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 5,
+        min_accuracy: 0.75,
+        decay_days: Some(30),
+    ),
+)

@@ -1,0 +1,29 @@
+Concept(
+    id: "binary_multiplication",
+    title: "Binary Multiplication",
+    domain: "foundations.arithmetic",
+    difficulty: Practical,
+    applicability: [Core, Practical],
+    prerequisites: ["binary_addition", "bit_shifting"],
+    related: ["binary_addition", "bit_shifting", "binary"],
+    learning_objectives: [
+        "Multiply two binary numbers using shift-and-add, the same technique long multiplication uses in decimal",
+        "Explain why multiplying by a power of two is just a left shift, with no addition needed at all",
+    ],
+    explanation: "binary_multiplication.md",
+    interactive_demo: None,
+    practice_types: ["binary_multiplication_eval"],
+    build_refs: [],
+    lab_capabilities: ["binary_playground"],
+    real_world_uses: [
+        "What a CPU's multiplier circuit does internally — shifted partial products, added together",
+        "Why `x << 3` is a common fast-path for `x * 8` in performance-sensitive code",
+        "Computing array/buffer offsets (row * width, index * element size)",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 4,
+        min_accuracy: 0.7,
+        decay_days: Some(30),
+    ),
+)

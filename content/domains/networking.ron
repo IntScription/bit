@@ -1,0 +1,7 @@
+Domain(
+    id: "networking",
+    name: "Networking",
+    parent: None,
+    order: 40,
+    description: "How machines address and find each other — starting with the humble IP address, which is just bytes you already know, written differently.",
+)

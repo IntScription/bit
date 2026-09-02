@@ -1,0 +1,29 @@
+Concept(
+    id: "population_count",
+    title: "Population Count",
+    domain: "foundations.bit_manipulation",
+    difficulty: Practical,
+    applicability: [Practical, Specialized],
+    prerequisites: ["binary"],
+    related: ["binary", "bitwise_masks", "checksums"],
+    learning_objectives: [
+        "Count the number of set (1) bits in a binary value",
+        "Explain why population count is also called Hamming weight",
+    ],
+    explanation: "population_count.md",
+    interactive_demo: None,
+    practice_types: ["population_count_eval"],
+    build_refs: [],
+    lab_capabilities: ["binary_playground"],
+    real_world_uses: [
+        "Parity and basic error-checking hardware",
+        "Counting how many permission flags are active in a byte",
+        "Hamming distance in coding theory and cryptography",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 4,
+        min_accuracy: 0.8,
+        decay_days: Some(30),
+    ),
+)

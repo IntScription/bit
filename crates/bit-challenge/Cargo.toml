@@ -1,0 +1,10 @@
+[package]
+name = "bit-challenge"
+edition.workspace = true
+version.workspace = true
+publish.workspace = true
+
+[dependencies]
+bit-knowledge = { path = "../bit-knowledge" }
+bit-simulation = { path = "../bit-simulation" }
+serde.workspace = true

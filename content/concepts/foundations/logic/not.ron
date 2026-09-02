@@ -1,0 +1,32 @@
+Concept(
+    id: "not",
+    title: "NOT",
+    domain: "foundations.logic",
+    difficulty: Easy,
+    applicability: [Core, Practical],
+    prerequisites: ["boolean_logic"],
+    related: ["boolean_logic", "and", "or", "xor"],
+    learning_objectives: [
+        "Predict NOT's output for a single true/false input",
+        "Recognize NOT as the only operator that takes just one input",
+    ],
+    explanation: "not.md",
+    interactive_demo: Some(InteractiveDemo(
+        id: "logic_gate",
+        params: {"gate": "not"},
+    )),
+    practice_types: ["logic_gate_eval"],
+    build_refs: ["logic_gate_machine"],
+    lab_capabilities: ["logic_gate_playground"],
+    real_world_uses: [
+        "Inverting a condition (if NOT logged_in)",
+        "Bitmasking to compute a complement",
+        "Hardware inverters in digital circuits",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 3,
+        min_accuracy: 0.85,
+        decay_days: Some(30),
+    ),
+)

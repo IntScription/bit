@@ -1,0 +1,7 @@
+Domain(
+    id: "data_representation.text_encoding",
+    name: "Text Encoding",
+    parent: Some("data_representation"),
+    order: 10,
+    description: "How a byte becomes a letter — from 128-character ASCII to Unicode's UTF-8 encoding of the whole world's scripts.",
+)

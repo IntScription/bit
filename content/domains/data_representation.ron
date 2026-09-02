@@ -1,0 +1,7 @@
+Domain(
+    id: "data_representation",
+    name: "Data Representation",
+    parent: None,
+    order: 10,
+    description: "How bytes stop being just numbers and start representing text, signed values, and data you can trust.",
+)

@@ -1,0 +1,7 @@
+Domain(
+    id: "data_structures",
+    name: "Data Structures",
+    parent: None,
+    order: 20,
+    description: "The shapes data gets organized into once a single byte isn't enough — arrays, and the access patterns built on top of them.",
+)

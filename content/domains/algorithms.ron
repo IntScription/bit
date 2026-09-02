@@ -1,0 +1,7 @@
+Domain(
+    id: "algorithms",
+    name: "Algorithms",
+    parent: None,
+    order: 30,
+    description: "Step-by-step procedures for working with data — starting with the most fundamental question: how do you find something?",
+)

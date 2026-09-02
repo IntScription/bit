@@ -1,0 +1,14 @@
+BuildDefinition(
+    id: "digital_lock",
+    name: "Digital Lock",
+    tier: Beginner,
+    description: "Crack an 8-bit combination lock by setting the switches to the secret code. Same mechanic as Binary Counter, framed as a puzzle instead of a count.",
+    concept_ids: ["binary"],
+    params: {
+        "bit_width": "8",
+        // 182 = 0xB6 = 10110110 — the exact example walked through on the
+        // Hexadecimal concept page, so cracking this code feels familiar.
+        "target_value": "182",
+    },
+    freeform: false,
+)

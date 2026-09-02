@@ -1,0 +1,32 @@
+Concept(
+    id: "hexadecimal",
+    title: "Hexadecimal",
+    domain: "foundations.bits_binary",
+    difficulty: Easy,
+    applicability: [Core, Practical],
+    prerequisites: ["binary", "bytes"],
+    related: ["binary", "bytes", "decimal"],
+    learning_objectives: [
+        "Understand hex as base-16, using digits 0-9 and A-F",
+        "Group a byte into two hex digits (nibbles) instead of eight binary digits",
+    ],
+    explanation: "hexadecimal.md",
+    interactive_demo: Some(InteractiveDemo(
+        id: "nibble_grouping",
+        params: {"bit_width": "8"},
+    )),
+    practice_types: ["hex_to_decimal", "hex_to_binary"],
+    build_refs: ["hex_color_builder"],
+    lab_capabilities: ["binary_playground", "byte_playground"],
+    real_world_uses: [
+        "Memory addresses shown in debuggers",
+        "Color codes (#FF00AA in CSS, design tools)",
+        "Compact, human-friendly byte representation",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 5,
+        min_accuracy: 0.8,
+        decay_days: Some(30),
+    ),
+)

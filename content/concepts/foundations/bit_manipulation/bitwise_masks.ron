@@ -1,0 +1,30 @@
+Concept(
+    id: "bitwise_masks",
+    title: "Bitwise Masks",
+    domain: "foundations.bit_manipulation",
+    difficulty: Core,
+    applicability: [Core, Practical],
+    prerequisites: ["and", "or", "xor"],
+    related: ["and", "or", "xor", "population_count"],
+    learning_objectives: [
+        "Use AND with a mask to read/clear specific bits without touching the rest",
+        "Use OR with a mask to set specific bits without touching the rest",
+        "Predict the result of masking a byte with AND, OR, or XOR",
+    ],
+    explanation: "bitwise_masks.md",
+    interactive_demo: None,
+    practice_types: ["bitwise_mask_eval"],
+    build_refs: ["bit_flag_system"],
+    lab_capabilities: ["binary_playground"],
+    real_world_uses: [
+        "Extracting a color channel out of a packed RGB(A) pixel",
+        "Setting, clearing, or checking permission flags in a single byte",
+        "Reading specific status bits out of a hardware register",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 5,
+        min_accuracy: 0.75,
+        decay_days: Some(30),
+    ),
+)

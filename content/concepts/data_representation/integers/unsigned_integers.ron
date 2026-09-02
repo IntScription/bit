@@ -1,0 +1,29 @@
+Concept(
+    id: "unsigned_integers",
+    title: "Unsigned Integers",
+    domain: "data_representation.integers",
+    difficulty: Easy,
+    applicability: [Core],
+    prerequisites: ["bytes"],
+    related: ["binary", "bytes", "signed_integers"],
+    learning_objectives: [
+        "See 'unsigned' as just the plain reading of bits you already know from Binary",
+        "Compute the range a given bit width can represent (0 to 2^n - 1)",
+    ],
+    explanation: "unsigned_integers.md",
+    interactive_demo: None,
+    practice_types: [],
+    build_refs: [],
+    lab_capabilities: ["binary_playground"],
+    real_world_uses: [
+        "Array indices and sizes",
+        "Memory addresses",
+        "Counters that never go negative",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 2,
+        min_accuracy: 0.8,
+        decay_days: Some(30),
+    ),
+)

@@ -1,0 +1,29 @@
+Concept(
+    id: "linked_list",
+    title: "Linked Lists",
+    domain: "data_structures.linear",
+    difficulty: Core,
+    applicability: [Core, Practical],
+    prerequisites: ["arrays"],
+    related: ["arrays", "stacks", "queues"],
+    learning_objectives: [
+        "Explain why a linked list can grow or shrink without moving any existing elements, unlike a fixed-size array",
+        "Trace a traversal from the head, one `next` pointer at a time, to find a value at a given position",
+    ],
+    explanation: "linked_list.md",
+    interactive_demo: None,
+    practice_types: ["linked_list_traversal_eval"],
+    build_refs: [],
+    lab_capabilities: ["array_playground"],
+    real_world_uses: [
+        "Undo history and playlists, where items are added/removed from the middle constantly",
+        "The building block behind a stack or queue implemented without a fixed-size backing array",
+        "Browser history's back/forward chain",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 4,
+        min_accuracy: 0.75,
+        decay_days: Some(30),
+    ),
+)

@@ -1,0 +1,9 @@
+[package]
+name = "content-lint"
+edition.workspace = true
+version.workspace = true
+publish.workspace = true
+
+[dependencies]
+bit-content = { path = "../../crates/bit-content" }
+bit-build = { path = "../../crates/bit-build" }

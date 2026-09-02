@@ -1,0 +1,31 @@
+Concept(
+    id: "decimal",
+    title: "Decimal",
+    domain: "foundations.numbers",
+    difficulty: Easy,
+    applicability: [Core],
+    prerequisites: [],
+    related: ["binary", "hexadecimal"],
+    learning_objectives: [
+        "See decimal as base-10 positional notation — the same idea as binary, just with ten digits instead of two",
+        "Compare decimal and binary place values side by side",
+    ],
+    explanation: "decimal.md",
+    interactive_demo: Some(InteractiveDemo(
+        id: "place_value_comparison",
+        params: {"base": "10"},
+    )),
+    practice_types: [],
+    build_refs: [],
+    lab_capabilities: ["binary_playground"],
+    real_world_uses: [
+        "Everyday counting and arithmetic",
+        "Human-readable output in every app",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 2,
+        min_accuracy: 0.8,
+        decay_days: Some(60),
+    ),
+)

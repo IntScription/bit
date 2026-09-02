@@ -1,0 +1,14 @@
+BuildDefinition(
+    id: "pixel_art_studio",
+    name: "Pixel Art Studio",
+    tier: Advanced,
+    description: "Recreate a detailed 8x8 pattern, one bit at a time. Same mechanic as Pixel Builder, just four times the grid — precision matters more when there's more to get wrong.",
+    concept_ids: ["bits", "binary"],
+    params: {
+        "width": "8",
+        "height": "8",
+        // Row-major, '1' = pixel on — a simple pixel-art heart.
+        "pattern": "0110011011111111111111111111111101111110001111000001100000000000",
+    },
+    freeform: false,
+)

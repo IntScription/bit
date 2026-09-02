@@ -1,0 +1,29 @@
+Concept(
+    id: "linear_search",
+    title: "Linear Search",
+    domain: "algorithms.searching",
+    difficulty: Easy,
+    applicability: [Core, Practical],
+    prerequisites: ["arrays"],
+    related: ["arrays", "binary_search"],
+    learning_objectives: [
+        "Trace a left-to-right scan of an array to find a target value",
+        "Explain why linear search works on any array, sorted or not",
+    ],
+    explanation: "linear_search.md",
+    interactive_demo: None,
+    practice_types: ["linear_search_eval"],
+    build_refs: [],
+    lab_capabilities: ["array_playground"],
+    real_world_uses: [
+        "Scanning an unsorted list — there's no other option without sorting first",
+        "Searching a small collection where sorting wouldn't pay off",
+        "The fallback every other search strategy is judged against",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 4,
+        min_accuracy: 0.8,
+        decay_days: Some(30),
+    ),
+)

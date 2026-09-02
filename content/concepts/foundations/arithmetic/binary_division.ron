@@ -1,0 +1,29 @@
+Concept(
+    id: "binary_division",
+    title: "Binary Division",
+    domain: "foundations.arithmetic",
+    difficulty: Practical,
+    applicability: [Core, Practical, Specialized],
+    prerequisites: ["binary_multiplication", "binary_subtraction"],
+    related: ["binary_multiplication", "binary_subtraction", "bit_shifting"],
+    learning_objectives: [
+        "Perform binary long division: shift, compare, subtract, repeat",
+        "Explain why dividing by a power of two is just a right shift, the mirror image of multiplying by one",
+    ],
+    explanation: "binary_division.md",
+    interactive_demo: None,
+    practice_types: ["binary_division_eval"],
+    build_refs: [],
+    lab_capabilities: ["binary_playground"],
+    real_world_uses: [
+        "Why `x >> 3` is a common fast-path for `x / 8` in performance-sensitive code",
+        "Computing how many fixed-size chunks fit in a buffer",
+        "The slowest of the four basic operations in real hardware — one of the reasons code avoids division in hot loops",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 4,
+        min_accuracy: 0.7,
+        decay_days: Some(30),
+    ),
+)

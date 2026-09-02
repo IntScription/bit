@@ -1,0 +1,7 @@
+Domain(
+    id: "algorithms.sorting",
+    name: "Sorting",
+    parent: Some("algorithms"),
+    order: 10,
+    description: "Putting a collection in order — and why doing it one careful pass at a time is the easiest place to start.",
+)

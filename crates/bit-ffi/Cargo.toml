@@ -1,0 +1,29 @@
+[package]
+name = "bit-ffi"
+edition.workspace = true
+version.workspace = true
+publish.workspace = true
+
+[lib]
+name = "bit_ffi"
+crate-type = ["lib", "staticlib", "cdylib"]
+
+[[bin]]
+name = "uniffi-bindgen"
+path = "uniffi-bindgen.rs"
+required-features = ["cli"]
+
+[features]
+cli = ["uniffi/cli"]
+
+[dependencies]
+bit-core = { path = "../bit-core" }
+bit-build = { path = "../bit-build" }
+bit-simulation = { path = "../bit-simulation" }
+bit-knowledge = { path = "../bit-knowledge" }
+bit-content = { path = "../bit-content" }
+bit-persistence = { path = "../bit-persistence" }
+bit-progression = { path = "../bit-progression" }
+uniffi = "0.32"
+thiserror = "2"
+serde_json.workspace = true

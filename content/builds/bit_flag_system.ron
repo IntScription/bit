@@ -1,0 +1,16 @@
+BuildDefinition(
+    id: "bit_flag_system",
+    name: "Bit Flag System",
+    tier: Core,
+    description: "Eight named permission flags packed into a single byte. Set exactly the right combination on to match the target access level.",
+    concept_ids: ["binary", "and", "or", "bitwise_masks"],
+    params: {
+        "bit_width": "8",
+        // Presentation-only: bit i (LSB-first) is labeled flag_labels[i].
+        // Not read by the simulation — the UI aligns labels to switches.
+        "flag_labels": "IS_ACTIVE,IS_ADMIN,IS_BANNED,HAS_PREMIUM,CAN_COMMENT,CAN_UPLOAD,IS_VERIFIED,IS_MUTED",
+        // IS_ACTIVE + HAS_PREMIUM + IS_VERIFIED on = 1 + 8 + 64 = 73
+        "target_value": "73",
+    },
+    freeform: false,
+)

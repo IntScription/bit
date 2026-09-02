@@ -1,0 +1,32 @@
+Concept(
+    id: "twos_complement",
+    title: "Two's Complement",
+    domain: "data_representation.integers",
+    difficulty: Core,
+    applicability: [Core, Practical],
+    prerequisites: ["signed_integers"],
+    related: ["signed_integers", "binary", "xor"],
+    learning_objectives: [
+        "Read the same switches from Binary with the leftmost bit carrying negative weight instead of positive",
+        "Negate a value by flipping every bit and adding one",
+        "Explain why this scheme makes addition work identically for positive and negative numbers",
+    ],
+    explanation: "twos_complement.md",
+    interactive_demo: Some(InteractiveDemo(
+        id: "signed_switches",
+        params: {"bit_width": "8"},
+    )),
+    practice_types: ["twos_complement_conversion"],
+    build_refs: [],
+    lab_capabilities: ["binary_playground"],
+    real_world_uses: [
+        "How every mainstream CPU represents signed integers in hardware",
+        "Integer overflow behavior in most programming languages",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 5,
+        min_accuracy: 0.75,
+        decay_days: Some(30),
+    ),
+)

@@ -1,0 +1,7 @@
+Domain(
+    id: "foundations.bit_manipulation",
+    name: "Bit Manipulation",
+    parent: Some("foundations"),
+    order: 30,
+    description: "Masking, counting, and rotating bits directly — the toolkit behind flags, permissions, and low-level tricks.",
+)

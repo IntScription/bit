@@ -1,0 +1,29 @@
+Concept(
+    id: "bit_rotation",
+    title: "Bit Rotation",
+    domain: "foundations.bit_manipulation",
+    difficulty: Practical,
+    applicability: [Practical, Specialized],
+    prerequisites: ["bit_shifting"],
+    related: ["bit_shifting", "binary"],
+    learning_objectives: [
+        "Predict the result of rotating a byte left or right by n places",
+        "Explain how rotation differs from shifting (bits wrap around instead of being lost)",
+    ],
+    explanation: "bit_rotation.md",
+    interactive_demo: None,
+    practice_types: ["bit_rotation_eval"],
+    build_refs: [],
+    lab_capabilities: ["binary_playground"],
+    real_world_uses: [
+        "Mixing steps inside cryptographic hash functions",
+        "Circular buffers and ring-shaped data layouts",
+        "Hash table index scrambling",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 4,
+        min_accuracy: 0.75,
+        decay_days: Some(30),
+    ),
+)

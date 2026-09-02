@@ -1,0 +1,32 @@
+Concept(
+    id: "bit_shifting",
+    title: "Bit Shifting",
+    domain: "foundations.bits_binary",
+    difficulty: Core,
+    applicability: [Core, Practical],
+    prerequisites: ["binary"],
+    related: ["binary", "bytes"],
+    learning_objectives: [
+        "See a left shift as multiplying by two, a right shift as dividing by two",
+        "Predict the result of shifting a binary value left or right by n places",
+    ],
+    explanation: "bit_shifting.md",
+    interactive_demo: Some(InteractiveDemo(
+        id: "shift_register",
+        params: {"bit_width": "8"},
+    )),
+    practice_types: ["predict_shift_result"],
+    build_refs: [],
+    lab_capabilities: ["binary_playground"],
+    real_world_uses: [
+        "Fast multiplication/division by powers of two",
+        "Packing multiple small values into one integer",
+        "Extracting fields out of binary data formats",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 5,
+        min_accuracy: 0.75,
+        decay_days: Some(30),
+    ),
+)

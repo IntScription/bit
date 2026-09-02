@@ -1,0 +1,11 @@
+[package]
+name = "bit-content"
+edition.workspace = true
+version.workspace = true
+publish.workspace = true
+
+[dependencies]
+bit-knowledge = { path = "../bit-knowledge" }
+bit-build = { path = "../bit-build" }
+serde.workspace = true
+ron.workspace = true

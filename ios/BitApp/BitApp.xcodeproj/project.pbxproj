@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		054B0F1E5592412A89607471 /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CC519107934C24A5132701 /* Haptics.swift */; };
+		0818AD350EDC4B128DAD74F8 /* BitFFI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64A0203677D4DD2B147B9CB /* BitFFI.xcframework */; };
+		262C8419009A44008126A720 /* BuildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA723C86C44D5291F97DC8 /* BuildView.swift */; };
+		28F4F3551F864701866AFF0E /* content in Resources */ = {isa = PBXBuildFile; fileRef = 2510D4A7B3C24068955A0C3C /* content */; };
+		2BE4D07115774B73AA04238B /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73266C38074C46957F54B6 /* Engine.swift */; };
+		5714E6E4400841E49760D97E /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DF429871E4CE19A2C7E94 /* Theme.swift */; };
+		612AC97A190144D4BF3D9653 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DCBBBB03E7E4D02822AC510 /* Assets.xcassets */; };
+		658D648F71B04AC487EBA6E9 /* BitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36895FABC3294ED3BACAF411 /* BitApp.swift */; };
+		75C27F26EAD54BF59EB6DFB8 /* BitAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB373BC9DF34079AB186BB5 /* BitAppUITests.swift */; };
+		82D68DC515954FD2A1B18FAF /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E913800B1A4F0AAFAC1BF4 /* Components.swift */; };
+		8BA0E35E7CA242F58388513D /* Demos.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74F484ED0094D9F9147E178 /* Demos.swift */; };
+		8BAA47E9DE064B0C8513F2C7 /* bit_ffi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7143FFDF9A9C4F43BC13F39F /* bit_ffi.swift */; };
+		949FB1086F0D4EC0B59F0758 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537F1AA087F4D30BD1F39B7 /* ProfileView.swift */; };
+		9A667B21F27D429E90A51753 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F80F72F6142559ED08287 /* RootView.swift */; };
+		A1B2C3D4E5F6478899AABBCC /* DailyChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1122334455667788990011AA /* DailyChallengeView.swift */; };
+		A36533431E52446FBCCF03C6 /* LabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13287A990A99423487547478 /* LabView.swift */; };
+		AFE8D57D9EE442459BF5F80B /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41071889BFF64638BC33F6BD /* SplashView.swift */; };
+		B2C3D4E5F60789990011AABB /* StreakReminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233445566778899001122BB /* StreakReminders.swift */; };
+		C3D4E5F6078899AA0011BBCC /* SharedWidgetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33445566778899001122BBCC /* SharedWidgetData.swift */; };
+		CC6ACB5468AB4ABD944D2838 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4037C07BC8BB4B68918B04D7 /* PlayView.swift */; };
+		D29BA4ED923F4B6CA45AF205 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1CF649F23A46F0A8AC237C /* ExploreView.swift */; };
+		F7CB4DA13047EEE800180C1D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7CB4DA03047EEE800180C1D /* WidgetKit.framework */; };
+		F7CB4DA33047EEE800180C1D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7CB4DA23047EEE800180C1D /* SwiftUI.framework */; };
+		F7CB4DB43047EEEA00180C1D /* BitWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F7CB4D9E3047EEE800180C1D /* BitWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3253C5AD067460DBF51E3E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18DF0740D0BD4AC7A259DA8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D735595102854A13A595334E;
+			remoteInfo = BitApp;
+		};
+		F7CB4DB23047EEEA00180C1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18DF0740D0BD4AC7A259DA8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7CB4D9D3047EEE800180C1D;
+			remoteInfo = BitWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F7CB4DB53047EEEA00180C1D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F7CB4DB43047EEEA00180C1D /* BitWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		002DF429871E4CE19A2C7E94 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		0F73266C38074C46957F54B6 /* Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		1122334455667788990011AA /* DailyChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyChallengeView.swift; sourceTree = "<group>"; };
+		13287A990A99423487547478 /* LabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabView.swift; sourceTree = "<group>"; };
+		15AA723C86C44D5291F97DC8 /* BuildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildView.swift; sourceTree = "<group>"; };
+		2233445566778899001122BB /* StreakReminders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakReminders.swift; sourceTree = "<group>"; };
+		2510D4A7B3C24068955A0C3C /* content */ = {isa = PBXFileReference; lastKnownFileType = folder; name = content; path = ../../content; sourceTree = "<group>"; };
+		267948C386664C08B34BAF35 /* BitAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33445566778899001122BBCC /* SharedWidgetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedWidgetData.swift; sourceTree = "<group>"; };
+		36895FABC3294ED3BACAF411 /* BitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitApp.swift; sourceTree = "<group>"; };
+		4037C07BC8BB4B68918B04D7 /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
+		41071889BFF64638BC33F6BD /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		56CC519107934C24A5132701 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
+		5DB373BC9DF34079AB186BB5 /* BitAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitAppUITests.swift; sourceTree = "<group>"; };
+		6009328B5E744EAFB1B8A97E /* BitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7143FFDF9A9C4F43BC13F39F /* bit_ffi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = bit_ffi.swift; path = ../Generated/bit_ffi.swift; sourceTree = "<group>"; };
+		7DCBBBB03E7E4D02822AC510 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88E913800B1A4F0AAFAC1BF4 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		8C1CF649F23A46F0A8AC237C /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		B537F1AA087F4D30BD1F39B7 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B64A0203677D4DD2B147B9CB /* BitFFI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BitFFI.xcframework; path = ../BitFFI.xcframework; sourceTree = "<group>"; };
+		D74F484ED0094D9F9147E178 /* Demos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demos.swift; sourceTree = "<group>"; };
+		E26F80F72F6142559ED08287 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		F7CB4D9E3047EEE800180C1D /* BitWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BitWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7CB4DA03047EEE800180C1D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		F7CB4DA23047EEE800180C1D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		F7CB4DC83047FCEB00180C1D /* BitWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BitWidgetExtension.entitlements; sourceTree = "<group>"; };
+		F7CB4DC93047FD2D00180C1D /* BitApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BitApp.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F7CB4DB83047EEEA00180C1D /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = F7CB4D9D3047EEE800180C1D /* BitWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F7CB4DA43047EEE800180C1D /* BitWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (F7CB4DB83047EEEA00180C1D /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = BitWidget; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		467467794CCA4171BD9C2AF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A335287D85B34E0AAEA0F027 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0818AD350EDC4B128DAD74F8 /* BitFFI.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7CB4D9B3047EEE800180C1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7CB4DA33047EEE800180C1D /* SwiftUI.framework in Frameworks */,
+				F7CB4DA13047EEE800180C1D /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48E58D8111794E9FB807A7BF /* BitAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5DB373BC9DF34079AB186BB5 /* BitAppUITests.swift */,
+			);
+			path = BitAppUITests;
+			sourceTree = "<group>";
+		};
+		6206A091ABF34F0CA375AD5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6009328B5E744EAFB1B8A97E /* BitApp.app */,
+				267948C386664C08B34BAF35 /* BitAppUITests.xctest */,
+				F7CB4D9E3047EEE800180C1D /* BitWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2428E6A88AD4AF18A4B864B = {
+			isa = PBXGroup;
+			children = (
+				F7CB4DC83047FCEB00180C1D /* BitWidgetExtension.entitlements */,
+				E11C1CEA26234CF0AC4A96F2 /* BitApp */,
+				48E58D8111794E9FB807A7BF /* BitAppUITests */,
+				E654F36B7AB14D11BCE2E6FB /* Generated */,
+				B64A0203677D4DD2B147B9CB /* BitFFI.xcframework */,
+				2510D4A7B3C24068955A0C3C /* content */,
+				F7CB4DA43047EEE800180C1D /* BitWidget */,
+				F7CB4D9F3047EEE800180C1D /* Frameworks */,
+				6206A091ABF34F0CA375AD5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E11C1CEA26234CF0AC4A96F2 /* BitApp */ = {
+			isa = PBXGroup;
+			children = (
+				F7CB4DC93047FD2D00180C1D /* BitApp.entitlements */,
+				36895FABC3294ED3BACAF411 /* BitApp.swift */,
+				0F73266C38074C46957F54B6 /* Engine.swift */,
+				41071889BFF64638BC33F6BD /* SplashView.swift */,
+				E26F80F72F6142559ED08287 /* RootView.swift */,
+				002DF429871E4CE19A2C7E94 /* Theme.swift */,
+				56CC519107934C24A5132701 /* Haptics.swift */,
+				88E913800B1A4F0AAFAC1BF4 /* Components.swift */,
+				D74F484ED0094D9F9147E178 /* Demos.swift */,
+				8C1CF649F23A46F0A8AC237C /* ExploreView.swift */,
+				4037C07BC8BB4B68918B04D7 /* PlayView.swift */,
+				1122334455667788990011AA /* DailyChallengeView.swift */,
+				2233445566778899001122BB /* StreakReminders.swift */,
+				33445566778899001122BBCC /* SharedWidgetData.swift */,
+				15AA723C86C44D5291F97DC8 /* BuildView.swift */,
+				13287A990A99423487547478 /* LabView.swift */,
+				B537F1AA087F4D30BD1F39B7 /* ProfileView.swift */,
+				7DCBBBB03E7E4D02822AC510 /* Assets.xcassets */,
+			);
+			path = BitApp;
+			sourceTree = "<group>";
+		};
+		E654F36B7AB14D11BCE2E6FB /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				7143FFDF9A9C4F43BC13F39F /* bit_ffi.swift */,
+			);
+			name = Generated;
+			sourceTree = "<group>";
+		};
+		F7CB4D9F3047EEE800180C1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7CB4DA03047EEE800180C1D /* WidgetKit.framework */,
+				F7CB4DA23047EEE800180C1D /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D735595102854A13A595334E /* BitApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A07F591A42A48318EE81D27 /* Build configuration list for PBXNativeTarget "BitApp" */;
+			buildPhases = (
+				324AD6F64D97438CB15674EF /* Sources */,
+				A335287D85B34E0AAEA0F027 /* Frameworks */,
+				29C981CB4C5C4B7599CDEDC9 /* Resources */,
+				F7CB4DB53047EEEA00180C1D /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7CB4DB33047EEEA00180C1D /* PBXTargetDependency */,
+			);
+			name = BitApp;
+			productName = BitApp;
+			productReference = 6009328B5E744EAFB1B8A97E /* BitApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0441D3E7C7844B1AAF0640F /* BitAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E48AD21CEAFB46EAB4E8E06C /* Build configuration list for PBXNativeTarget "BitAppUITests" */;
+			buildPhases = (
+				4B9D764DFEEB4DCF8881F309 /* Sources */,
+				467467794CCA4171BD9C2AF4 /* Frameworks */,
+				1ED7228E826340BABDB99C18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05F0A3ABC30D4023A32F117E /* PBXTargetDependency */,
+			);
+			name = BitAppUITests;
+			productName = BitAppUITests;
+			productReference = 267948C386664C08B34BAF35 /* BitAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		F7CB4D9D3047EEE800180C1D /* BitWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7CB4DB93047EEEA00180C1D /* Build configuration list for PBXNativeTarget "BitWidgetExtension" */;
+			buildPhases = (
+				F7CB4D9A3047EEE800180C1D /* Sources */,
+				F7CB4D9B3047EEE800180C1D /* Frameworks */,
+				F7CB4D9C3047EEE800180C1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F7CB4DA43047EEE800180C1D /* BitWidget */,
+			);
+			name = BitWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = BitWidgetExtension;
+			productReference = F7CB4D9E3047EEE800180C1D /* BitWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18DF0740D0BD4AC7A259DA8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					F0441D3E7C7844B1AAF0640F = {
+						TestTargetID = D735595102854A13A595334E;
+					};
+					F7CB4D9D3047EEE800180C1D = {
+						CreatedOnToolsVersion = 26.6;
+					};
+				};
+			};
+			buildConfigurationList = CAEC25DCDAD443D5AEB5CA8B /* Build configuration list for PBXProject "BitApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2428E6A88AD4AF18A4B864B;
+			productRefGroup = 6206A091ABF34F0CA375AD5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D735595102854A13A595334E /* BitApp */,
+				F0441D3E7C7844B1AAF0640F /* BitAppUITests */,
+				F7CB4D9D3047EEE800180C1D /* BitWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1ED7228E826340BABDB99C18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29C981CB4C5C4B7599CDEDC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28F4F3551F864701866AFF0E /* content in Resources */,
+				612AC97A190144D4BF3D9653 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7CB4D9C3047EEE800180C1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		324AD6F64D97438CB15674EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				658D648F71B04AC487EBA6E9 /* BitApp.swift in Sources */,
+				2BE4D07115774B73AA04238B /* Engine.swift in Sources */,
+				AFE8D57D9EE442459BF5F80B /* SplashView.swift in Sources */,
+				9A667B21F27D429E90A51753 /* RootView.swift in Sources */,
+				5714E6E4400841E49760D97E /* Theme.swift in Sources */,
+				054B0F1E5592412A89607471 /* Haptics.swift in Sources */,
+				82D68DC515954FD2A1B18FAF /* Components.swift in Sources */,
+				8BA0E35E7CA242F58388513D /* Demos.swift in Sources */,
+				D29BA4ED923F4B6CA45AF205 /* ExploreView.swift in Sources */,
+				CC6ACB5468AB4ABD944D2838 /* PlayView.swift in Sources */,
+				A1B2C3D4E5F6478899AABBCC /* DailyChallengeView.swift in Sources */,
+				B2C3D4E5F60789990011AABB /* StreakReminders.swift in Sources */,
+				C3D4E5F6078899AA0011BBCC /* SharedWidgetData.swift in Sources */,
+				262C8419009A44008126A720 /* BuildView.swift in Sources */,
+				A36533431E52446FBCCF03C6 /* LabView.swift in Sources */,
+				949FB1086F0D4EC0B59F0758 /* ProfileView.swift in Sources */,
+				8BAA47E9DE064B0C8513F2C7 /* bit_ffi.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9D764DFEEB4DCF8881F309 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C27F26EAD54BF59EB6DFB8 /* BitAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7CB4D9A3047EEE800180C1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05F0A3ABC30D4023A32F117E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D735595102854A13A595334E /* BitApp */;
+			targetProxy = C3253C5AD067460DBF51E3E3 /* PBXContainerItemProxy */;
+		};
+		F7CB4DB33047EEEA00180C1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7CB4D9D3047EEE800180C1D /* BitWidgetExtension */;
+			targetProxy = F7CB4DB23047EEEA00180C1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4DD74AABEA3A46929117A1D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_OPTIMIZATION_LEVEL = s;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F030DF755634AE5B897AF63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOLS = NO;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_ENTITLEMENTS = BitApp/BitApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2S23H98K3T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BIT;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kartiksanil.bit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9BFEBAAC4B044A9C91EEF68C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B10BDEF4F6C140AF842FD353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kartiksanil.bit.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = BitApp;
+			};
+			name = Debug;
+		};
+		BABCCB407B74419D9E6DDB4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOLS = NO;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_ENTITLEMENTS = BitApp/BitApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2S23H98K3T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BIT;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kartiksanil.bit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D5C4877C96E94AE19F859136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kartiksanil.bit.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = BitApp;
+			};
+			name = Release;
+		};
+		F7CB4DB63047EEEA00180C1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_ENTITLEMENTS = BitWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2S23H98K3T;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BitWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BitWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kartiksanil.bit.BitWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7CB4DB73047EEEA00180C1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_ENTITLEMENTS = BitWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2S23H98K3T;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BitWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BitWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kartiksanil.bit.BitWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A07F591A42A48318EE81D27 /* Build configuration list for PBXNativeTarget "BitApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F030DF755634AE5B897AF63 /* Debug */,
+				BABCCB407B74419D9E6DDB4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAEC25DCDAD443D5AEB5CA8B /* Build configuration list for PBXProject "BitApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BFEBAAC4B044A9C91EEF68C /* Debug */,
+				4DD74AABEA3A46929117A1D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E48AD21CEAFB46EAB4E8E06C /* Build configuration list for PBXNativeTarget "BitAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B10BDEF4F6C140AF842FD353 /* Debug */,
+				D5C4877C96E94AE19F859136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7CB4DB93047EEEA00180C1D /* Build configuration list for PBXNativeTarget "BitWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7CB4DB63047EEEA00180C1D /* Debug */,
+				F7CB4DB73047EEEA00180C1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18DF0740D0BD4AC7A259DA8C /* Project object */;
+}

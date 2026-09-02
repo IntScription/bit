@@ -1,0 +1,24 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/bit-knowledge",
+    "crates/bit-content",
+    "crates/bit-challenge",
+    "crates/bit-simulation",
+    "crates/bit-build",
+    "crates/bit-progression",
+    "crates/bit-persistence",
+    "crates/bit-core",
+    "crates/bit-ffi",
+    "tools/content-lint",
+]
+
+[workspace.package]
+edition = "2021"
+version = "0.1.0"
+publish = false
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+ron = "0.8"

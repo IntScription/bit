@@ -1,0 +1,32 @@
+Concept(
+    id: "bits",
+    title: "Bits",
+    domain: "foundations.bits_binary",
+    difficulty: Easy,
+    applicability: [Core],
+    prerequisites: [],
+    related: ["binary", "boolean_logic"],
+    learning_objectives: [
+        "Understand a bit as a single binary digit: 0 or 1",
+        "See a bit as a physical on/off switch",
+    ],
+    explanation: "bits.md",
+    interactive_demo: Some(InteractiveDemo(
+        id: "single_switch",
+        params: {},
+    )),
+    practice_types: [],
+    build_refs: [],
+    lab_capabilities: ["binary_playground"],
+    real_world_uses: [
+        "Digital electronics",
+        "Transistor states",
+        "Data storage",
+    ],
+    historical_relevance: None,
+    mastery: MasteryRule(
+        min_practice_correct: 3,
+        min_accuracy: 0.8,
+        decay_days: Some(30),
+    ),
+)

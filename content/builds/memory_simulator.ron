@@ -1,0 +1,13 @@
+BuildDefinition(
+    id: "memory_simulator",
+    name: "Memory Simulator",
+    tier: Core,
+    description: "Eight byte-wide memory cells, addressed 0 through 7. Write the target byte into each address to match what a running program would have left behind.",
+    concept_ids: ["arrays", "bytes"],
+    params: {
+        // Comma-separated bytes, one per address — same mechanic as
+        // Array Builder, framed as memory instead of a plain list.
+        "target": "0,255,42,7,128,16,64,1",
+    },
+    freeform: false,
+)
