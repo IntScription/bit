@@ -10,6 +10,9 @@ shell, bridged through [UniFFI](https://mozilla.github.io/uniffi-rs/).
 No ads, no accounts, no analytics, no network requests. Everything
 runs and stays entirely on-device.
 
+App Store: [BIT - Computer Science Game](https://apps.apple.com/in/app/bit-computer-science-game/id6807720117)
+
+
 ## What it is
 
 - **Play** — an endless stream of puzzles drawn from what you've
